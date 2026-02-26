@@ -1,0 +1,12 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f9fafb;
+}
+
+.bg-card {
+    background-color: #ffffff;
+}
+
+.text-card-foreground {
+    color: #171717;
+}

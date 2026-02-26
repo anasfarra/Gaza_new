@@ -1,0 +1,112 @@
+@layer properties;
+@layer theme, base, components, utilities;
+
+@layer theme {
+    :root {
+        --font-sans: ui-sans-serif, system-ui, sans-serif;
+        --color-green-50: oklch(98.2% 0.018 155.826);
+        --color-green-600: oklch(62.7% 0.194 149.214);
+        --color-red-600: oklch(57.7% 0.245 27.325);
+        --color-purple-600: oklch(55.8% 0.288 302.321);
+        --color-purple-700: oklch(49.6% 0.265 301.924);
+        --background: #ffffff;
+        --foreground: #000000;
+        --card: #ffffff;
+        --card-foreground: #000000;
+        --primary: var(--color-green-600);
+        --primary-foreground: #ffffff;
+        --border: #e5e7eb;
+        --input: #e5e7eb;
+        --radius: 0.75rem;
+    }
+}
+
+/* تجميع بسيط للخصائص الأساسية لتشغيل الصفحة */
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-green-50);
+    margin: 0;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.bg-gradient-to-br {
+    background-image: linear-gradient(to bottom right, var(--color-green-50), #fff, var(--color-green-50));
+}
+
+.max-w-7xl {
+    max-width: 80rem;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.gap-3 {
+    gap: 0.75rem;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.rounded-xl {
+    border-radius: var(--radius);
+}
+
+.border {
+    border: 1px solid var(--border);
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.bg-card {
+    background-color: var(--card);
+}
+
+.text-neutral-600 {
+    color: #525252;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-9 {
+    height: 2.25rem;
+}
+
+/* أضف هنا باقي تنسيقات Tailwind المستخرجة إذا كنت تستخدمها محلياً */

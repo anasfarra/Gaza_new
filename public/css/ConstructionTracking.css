@@ -1,0 +1,17 @@
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+.tabs-content {
+    display: none;
+}
+
+.tabs-content.active {
+    display: block;
+}
+
+[role="tab"].active {
+    background-color: white !important;
+    color: #171717 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

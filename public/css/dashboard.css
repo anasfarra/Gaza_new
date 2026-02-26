@@ -1,0 +1,16 @@
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* تحسينات لبعض فئات Tailwind الخاصة بـ Radix UI و Shadcn */
+.bg-background {
+    background-color: white;
+}
+
+.text-foreground {
+    color: #171717;
+}
+
+.border-input {
+    border-color: #e5e5e5;
+}

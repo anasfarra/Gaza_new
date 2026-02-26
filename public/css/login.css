@@ -1,0 +1,64 @@
+/* filepath: css/login.css */
+.glass-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 16px 48px 0 rgba(31, 38, 135, 0.3);
+}
+
+.icon-glow {
+    position: relative;
+}
+
+.icon-glow::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: 1.5rem;
+    background: inherit;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.glass-card:hover .icon-glow::before {
+    opacity: 0.6;
+}
+
+.grid-pattern {
+    background-image:
+        linear-gradient(rgba(5, 150, 105, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(5, 150, 105, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+}
+
+.shine-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine-effect::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg,
+            transparent 30%,
+            rgba(255, 255, 255, 0.4) 50%,
+            transparent 70%);
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    transition: transform 0.6s ease;
+}
+
+.shine-effect:hover::after {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+}
